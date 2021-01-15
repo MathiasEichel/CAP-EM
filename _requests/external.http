@@ -1,0 +1,35 @@
+
+### Download Products
+GET http://localhost:4004/admin/aService_DownloadProducts
+Content-Type: application/json
+
+### view Products
+GET http://localhost:4004/admin/viewProducts
+Content-Type: application/json
+
+### - update Products
+PATCH  http://localhost:4004/api-product-srv/A_Product('TG-100')
+Content-Type: application/json
+
+{
+    "ItemCategoryGroup": "SERV",
+    "ManufacturerNumber": "100800"
+}
+
+### - create Products
+POST  http://localhost:4004/api-product-srv/A_Product('TG-800')
+Content-Type: application/json
+
+{
+    "ProductType":      "HAWA",
+    "CrossPlantStatus": "RE",
+    "SourceOfSupply":   "8",
+    "ProductGroup":     "RETAIL",
+    "BaseUnit":         "Pce",
+    "ItemCategoryGroup":"MMAT",
+    "ManufacturerNumber":"100800"
+}
+
+
+
+#
